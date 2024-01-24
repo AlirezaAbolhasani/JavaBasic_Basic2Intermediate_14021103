@@ -1,6 +1,6 @@
 package sessionone;
 
-import utill.Status;
+import utilities.Status;
 
 /**
  * *Developer: ALireza Abolhasani
@@ -56,12 +56,6 @@ public class Bill {
         setTypeOfBill(typeOfBill);
     }
     //Base Billing Code By Constructing Bill Base Class
-    public void billing(){
-        System.out.println(Status.STARS);
-        System.out.println("Billing Calculation...");
-        System.out.println("It's your "+getTypeOfBill());
-        System.out.println("Your Bill ID = " + getId());
-        System.out.println("Name = " + getName() + "- Price = " + getPrice() + Status.TOMAN);
-        System.out.println(Status.STARS);
+    public void billCalculator(){
     }
 }

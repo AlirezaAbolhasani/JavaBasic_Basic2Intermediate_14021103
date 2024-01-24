@@ -1,10 +1,6 @@
 package sessionone;
 
-import sessionone.Bill;
-import sessionone.Mobile;
-import sessionone.Power;
-import sessionone.Water;
-import utill.Status;
+import utilities.Status;
 
 /**
  * *Developer: ALireza Abolhasani
@@ -15,11 +11,14 @@ import utill.Status;
 public class Main {
 
     public static void main(String[] args) {
-        Bill mMobile = new Mobile("Alireza Abolhasani" , " 20800" , Status.MOBILE,8796523);
-        Bill mPower = new Power("Reza Jafari","158000", Status.POWER,9861222);
-        Bill mWater = new Water("Hosein Khalili","65580000",Status.WATER, 7896666);
-        mMobile.billing();
-        mPower.billing();
-        mWater.billing();
+        Bill mobile = new Mobile("Alireza Abolhasani" , " 20800" , Status.MOBILE,8796523);
+        Bill power = new Power("Reza Jafari","158000", Status.POWER,9861222);
+        Bill water = new Water("Hosein Khalili","65580000",Status.WATER, 7896666);
+
+        //Polymorphism
+        mobile.billCalculator();
+        power.billCalculator();
+        water.billCalculator();
+
     }
 }

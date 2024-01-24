@@ -8,65 +8,88 @@ package sessiontwo;
 
 
 public class Account {
-    private String name;
-    private int id;
-    private int balance;
-    private static Integer accCount = 0;
-    private static Integer maxBalance =0;
+    //Instance Variables
 
-    public static Integer getAccCount(){
-        return accCount;
-    }
-    public static Integer getMaxBalance(){
+    private int accNO;
+    private int branche;
+    private int extAccNo;
+    private int extCustId;
+    private double balance;
+    private Customer customer;
+
+    private static int accCounter;
+    private static double maxBalance;
+
+    public static double getMaxBalance(){
         return maxBalance;
     }
-
-    public Account() {
-        accCount +=1;
-        if(maxBalance < balance){
+    public static int  getAccCounter(){
+        return accCounter;
+    }
+    public Account(){
+        accCounter +=1;
+        if (maxBalance < balance){
             maxBalance = balance;
         }
     }
 
-    public Account(String name, int id, int balance) {
-        this.name = name;
-        this.id = id;
+    public Account(int accNO, int branche, double balance, Customer customer) {
+        accCounter +=1;
+        if (maxBalance < balance){
+            maxBalance = balance;
+        }
+        this.accNO = accNO;
+        this.branche = branche;
         this.balance = balance;
-        accCount +=1;
-        if(maxBalance < balance){
-            maxBalance = balance;
-        }
+        this.customer = customer;
+
     }
 
-    public String getName() {
-        return name;
+    public int getAccNO() {
+        return accNO;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAccNO(int accNO) {
+        this.accNO = accNO;
     }
 
-    public int getId() {
-        return id;
+    public int getBranche() {
+        return branche;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setBranche(int branche) {
+        this.branche = branche;
     }
 
-    public int getBalance() {
+    public int getExtAccNo() {
+        return extAccNo;
+    }
+
+    public void setExtAccNo(int extAccNo) {
+        this.extAccNo = extAccNo;
+    }
+
+    public int getExtCustId() {
+        return extCustId;
+    }
+
+    public void setExtCustId(int extCustId) {
+        this.extCustId = extCustId;
+    }
+
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
-    public static void setAccCount(Integer accCount) {
-        Account.accCount = accCount;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public static void setMaxBalance(Integer maxBalance) {
-        Account.maxBalance = maxBalance;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }

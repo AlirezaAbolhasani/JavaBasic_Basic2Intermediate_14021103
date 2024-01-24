@@ -1,6 +1,6 @@
 package sessionone;
 
-import utill.Status;
+import utilities.Status;
 
 /**
  * *Developer: ALireza Abolhasani
@@ -16,9 +16,9 @@ public class Power extends Bill{
     public Power (String name, String price ,String typeOfBill, Integer id){
         super(name,price,typeOfBill,id);
     }
-    public void claculate(){
+    public void billCalculator(){
         System.out.println(Status.STARS);
-        System.out.println("Billing Calculation...");
+        System.out.println("Power Calculation...");
         System.out.println("It's your "+getTypeOfBill());
         System.out.println("Your Bill ID = " + getId());
         System.out.println("Name = " + getName() + "- Price = " + getPrice());
