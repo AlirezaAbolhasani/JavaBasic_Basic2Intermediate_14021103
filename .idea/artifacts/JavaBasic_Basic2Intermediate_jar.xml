@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JavaBasic_Basic2Intermediate:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaBasic_Basic2Intermediate_jar</output-path>
+    <root id="archive" name="JavaBasic_Basic2Intermediate.jar">
+      <element id="module-output" name="JavaBasic_Basic2Intermediate" />
+    </root>
+  </artifact>
+</component>

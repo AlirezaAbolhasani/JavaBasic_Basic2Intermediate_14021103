@@ -7,7 +7,7 @@ package sessiontwo;
  **/
 
 
-public class main {
+public class Main {
 
     public static void main(String[] args) {
         Customer customer = new Customer();
@@ -17,6 +17,9 @@ public class main {
         Account account2 = new Account(15,65359,10000.59,customer);
         Account account3 = new Account(16,65359,10000.58,customer);
 
+        StringBuffer a =new StringBuffer(2);
+        a.append(3);
+        System.out.println(a);
 
 //        Account account1 = new Account();
 //        account1.setName("Alireza");
