@@ -1,6 +1,4 @@
-package sessiontwo;
-
-import java.util.TimeZone;
+package two;
 
 /**
  * *Developer: ALireza Abolhasani

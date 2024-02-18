@@ -1,4 +1,4 @@
-package sessionone;
+package one;
 
 import utilities.Status;
 
@@ -8,17 +8,16 @@ import utilities.Status;
  * 8:00 PM
  **/
 
+public class Water extends Bill{
 
-public class Power extends Bill{
-
-    public Power(){
+    public Water(){
     }
-    public Power (String name, String price ,String typeOfBill, Integer id){
+    public Water (String name, String price ,String typeOfBill, Integer id){
         super(name,price,typeOfBill,id);
     }
     public void billCalculator(){
         System.out.println(Status.STARS);
-        System.out.println("Power Calculation...");
+        System.out.println("Water Calculation...");
         System.out.println("It's your "+getTypeOfBill());
         System.out.println("Your Bill ID = " + getId());
         System.out.println("Name = " + getName() + "- Price = " + getPrice());

@@ -1,4 +1,4 @@
-package sessiontwo;
+package two;
 
 /**
  * *Developer: ALireza Abolhasani

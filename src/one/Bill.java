@@ -1,6 +1,4 @@
-package sessionone;
-
-import utilities.Status;
+package one;
 
 /**
  * *Developer: ALireza Abolhasani
@@ -14,6 +12,8 @@ public class Bill {
     private String name;
     private String typeOfBill;
     private Integer id;
+
+    protected int j = 0;
 
 
     public Integer getId() {
@@ -57,5 +57,17 @@ public class Bill {
     }
     //Base Billing Code By Constructing Bill Base Class
     public void billCalculator(){
+    }
+
+    @Override
+    public String toString() {
+        System.out.println( "Bill{" +
+                "price='" + price + '\'' +
+                ", name='" + name + '\'' +
+                ", typeOfBill='" + typeOfBill + '\'' +
+                ", id=" + id +
+                ", j=" + j +
+                '}');
+        return "";
     }
 }
