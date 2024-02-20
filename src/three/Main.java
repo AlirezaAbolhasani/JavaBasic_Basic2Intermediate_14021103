@@ -13,8 +13,8 @@ import java.util.regex.Pattern;
 
 
 public class Main {
-    public  static final String EXAMPLE ="Ali Reza  ";
-    public static void main(String[] args) throws InterruptedException{
+    public static final String EXAMPLE ="A l i R e z a  ";
+    public static void main(String[] args){
        // Thread.sleep(1000);
         Pattern pattern = Pattern.compile("\\s+");
         Matcher matcher = pattern.matcher(EXAMPLE);
