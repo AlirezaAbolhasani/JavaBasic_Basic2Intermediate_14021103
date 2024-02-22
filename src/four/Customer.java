@@ -34,6 +34,6 @@ public class Customer {
     }
 
     public void getCustInfo(String name){
-        System.out.println(name);
+        System.out.println("I'm " + name);
     }
 }

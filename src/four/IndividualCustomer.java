@@ -7,5 +7,5 @@ package four;
  **/
 
 
-public class HCustomer extends Customer{
+public class IndividualCustomer extends Customer{
 }

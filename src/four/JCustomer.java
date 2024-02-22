@@ -8,7 +8,9 @@ package four;
 
 
 public class JCustomer extends Customer{
+
     public void getJCustomer(Customer customer){
-      customer.getCustInfo("1");
+      customer.getCustInfo("Alireza");
     }
+    public  void test(){}
 }
