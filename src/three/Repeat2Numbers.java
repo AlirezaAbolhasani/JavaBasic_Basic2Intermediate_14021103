@@ -20,11 +20,12 @@ public class Repeat2Numbers {
         Scanner scanner = new Scanner(System.in);
         Pattern pattern = Pattern.compile(PATTERN,Pattern.MULTILINE);
         Matcher  matcher;
-        String whileStr = "#27";
-        System.out.println("****In each Step with Esc KEY you can Escape The program.******");
+        String whileStr;
+        System.out.println("****In each Step with A KEY you can Escape The program.******");
         do {
             System.out.print("Please Enter A eight numbers String :");
             whileStr = scanner.nextLine().trim();
+            if(whileStr.equals("A")) continue;
             matcher= pattern.matcher(whileStr);
             if (matcher.find()) {
                 System.out.println("Your String Was Match");
@@ -35,7 +36,7 @@ public class Repeat2Numbers {
                 System.out.println();
             }
 
-        }while (whileStr != "#27");
+        }while (!whileStr.equals("A"));
     }
 
 }

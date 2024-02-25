@@ -8,4 +8,9 @@ package four;
 
 
 public class IndividualCustomer extends Customer{
+
+    public void getIda(){
+        System.out.println("123456");
+    }
+
 }

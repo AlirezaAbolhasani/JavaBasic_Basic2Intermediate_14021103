@@ -6,15 +6,24 @@ import java.util.Scanner;
 
 
 public class Main {
+
+
     public static void main(String[] args)  {
         try {
             Scanner scanner = new Scanner(System.in);
             Customer customer = new Customer();
             String str = scanner.nextLine();
             customer.setId(str);
+
         }catch (NationalIdException n){
-            System.out.println(n);
+            System.out.println(n.getMessage());
         }
 
+    }
+
+    public void showID(Customer customer){
+        if(customer instanceof IndividualCustomer){
+            ((IndividualCustomer) customer).getIda();
+        }
     }
 }
